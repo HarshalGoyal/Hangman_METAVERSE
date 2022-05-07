@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/glossy_black">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/hangman_0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+    <TextView
+        android:textColor="@color/text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordTv"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="@string/init_word"/>
+    <TextView
+        android:textColor="@color/text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordToFindTv"
+        android:layout_below="@+id/wordTv"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+
+    <LinearLayout
+        android:background="@color/glossy_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="105dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/glossy_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="A" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="B" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="C" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="D" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="E" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="F" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="G" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="H" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="I" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/glossy_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="J" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="K" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="L" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="M" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="N" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="O" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="P" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="Q" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="R" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/glossy_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="S" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="T" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="U" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="V" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="W" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="X" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="Y" />
+
+            <Button
+                android:textColor="@color/text_white"
+                android:backgroundTint="@color/button_color"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:onClick="touchLetter"
+                android:text="Z" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

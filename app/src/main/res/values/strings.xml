@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">dummy</string>
+    <string name="init_word">_ _ _ _ _ _ _</string>
+    <string name="new_game">New Game</string>
+    <string name="you_win">You win</string>
+    <string name="you_lose">You lose</string>
+    <string name="game_is_ended">Game is ended. Start a new game!</string>
+    <string name="word_to_find">Word to find was: #word#</string>
+    <string name="try_an_other">Try an other letter</string>
+    <string name="letter_already_entered">Letter already entered</string>
+</resources>
